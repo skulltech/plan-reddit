@@ -89,4 +89,10 @@ ENV/
 .ropeproject
 
 # Pycharm files
-planreddit/.idea/
+.idea/
+
+# Database
+db.sqlite3
+
+# Secret file. May contain nulclear missiles launch codes.
+secret.json
