@@ -8,6 +8,7 @@ class Post(models.Model):
     text = models.TextField(max_length=40000)
     link = models.URLField()
     time = models.DateTimeField()
+    posted = models.BooleanField(editable=False, default=False)
 
     def clean(self):
         cleaned_data = super().clean()
