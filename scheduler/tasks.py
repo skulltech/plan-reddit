@@ -1,7 +1,7 @@
-import celery
+from planreddit import celery_app
 
 
-@celery.task(ignore_result=True)
+@celery_app.task(ignore_result=True)
 def post(user, post):
     if post.text and post.url:
         print('You can not post text and URL at once!')

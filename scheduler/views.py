@@ -1,7 +1,7 @@
 from django.shortcuts import render, HttpResponse
 from django.contrib.auth.decorators import login_required
 from .forms import PostForm
-from .core import post
+from .tasks import post
 
 
 @login_required(login_url='/redditauth/authorize')

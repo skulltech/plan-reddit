@@ -129,3 +129,4 @@ STATIC_URL = '/static/'
 AUTHENTICATION_BACKENDS = ['redditauth.backends.RedditBackend']
 AUTH_USER_MODEL = 'redditauth.RedditUser'
 SESSION_SAVE_EVERY_REQUEST = True
+CELERY_TASK_SERIALIZER = 'pickle'
