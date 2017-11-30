@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 from django.contrib.auth.decorators import login_required
 from .forms import PostForm
 from .core import post
@@ -6,7 +6,7 @@ from .core import post
 
 @login_required(login_url='/redditauth/authorize')
 def home(request):
-    return
+    return HttpResponse('This is the home page!')
 
 
 @login_required(login_url='/redditauth/authorize')

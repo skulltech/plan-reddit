@@ -18,5 +18,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', include('scheduler.urls'))
+    url(r'^redditauth/', include('redditauth.urls')),
+    url(r'^', include('scheduler.urls'))
 ]
