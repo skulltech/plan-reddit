@@ -2,3 +2,4 @@ django
 django-redditauth
 schedule
 praw
+celery
